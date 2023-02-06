@@ -1,12 +1,28 @@
+import React from 'react';
+
+import notes from '../assets/data'
+import Listitem from '../components/Listitem'
+
+
 
 
 const NotesListPage = () => {
 
-return (
-    <div>
-        page
-    </div>
-);
+    return (
+        <div>
+            {notes.map(
+
+                (note,index) =>{
+                    return(
+                        <Listitem key={index} note={note}    />
+
+
+                    );
+                }
+
+         )}
+        </div>
+    );
 
 
 }
