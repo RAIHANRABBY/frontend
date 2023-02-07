@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 // const Listitem = (props) => {
 //  return(
 //     <div>
@@ -15,10 +15,10 @@ import React from 'react'
 
 const Listitem = ({note}) => {
     
-    console.log(note.body)
+    
     return(
        <div>
-        <h1>{note.id}</h1>
+        <Link to={`/note/${note.id}`}>{note.id}</Link>
         <h3>{note.body}</h3>
         <small>{note.updated}</small>
 

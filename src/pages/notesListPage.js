@@ -1,7 +1,7 @@
 import React from 'react';
 
 import notes from '../assets/data'
-import Listitem from '../components/Listitem'
+import Listitem from '../Components/Listitem'
 
 
 
